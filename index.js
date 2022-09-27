@@ -8,7 +8,9 @@ const fetch = (...args) =>
 
 const apiUrl = 'https://api.trackingmore.com/v3/trackings/realtime';
 
-app.use(cors());
+app.use(cors({
+  origin: '*'
+}));
 
 app.use(express.json());
 
