@@ -15,8 +15,8 @@ app.use(cors({
 app.use(express.json());
 
 app.get('/api/correios/:packageId', async function (req, res) {
-  // LB346771692
-  const correiosUrl = `https://proxyapp.correios.com.br/v1/sro-rastro/${req.params.packageId}`
+  const correiosUrl = `https://proxyapp.correios.com.br/v1/sro-rastro/${req.params.packageId}`;
+
   try {
     let response = await fetch(correiosUrl);
     response = await response.json();
