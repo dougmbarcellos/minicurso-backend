@@ -14,6 +14,19 @@ app.use(cors({
 
 app.use(express.json());
 
+app.get('/api/correios/:packageId', async function (req, res) {
+  // LB346771692
+  const correiosUrl = `https://proxyapp.correios.com.br/v1/sro-rastro/${req.params.packageId}`
+  try {
+    let response = await fetch(correiosUrl);
+    response = await response.json();
+    res.status(200).json(response);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ msg: `Internal Server Error.` });
+  }
+});
+
 app.post(`/api/track`, async function (req, res) {
 
   console.log(req.body, typeof req.body);
