@@ -8,7 +8,7 @@ const fetch = (...args) =>
 
 const trackingmoreUrl = 'https://api.trackingmore.com/v3/trackings/realtime';
 
-const correiosUrl = `https://proxyapp.correios.com.br/v1/sro-rastro`;
+const correiosUrl = `https://proxyapp.correios.com.br`;
 
 app.use(cors({
   origin: '*'
@@ -17,10 +17,10 @@ app.use(cors({
 app.use(express.json());
 
 app.get('/api/correios/:trackingId', async function (req, res) {
-  const url = `${correiosUrl}/${req.params.trackingId}`;
+  const trackingUrl = `${correiosUrl}/v1/sro-rastro/${req.params.trackingId}`;
 
   try {
-    let response = await fetch(url);
+    let response = await fetch(trackingUrl);
     const jsonData = await response.json();
 
     // "/public-resources/img/smile.png" -> "https://proxyapp.correios.com.br/v1/sro-rastro/public-resources/img/smile.png"
