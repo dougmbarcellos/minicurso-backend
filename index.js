@@ -6,7 +6,9 @@ const port = process.env.PORT || 3030;
 const fetch = (...args) =>
   import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
-const apiUrl = 'https://api.trackingmore.com/v3/trackings/realtime';
+const trackingmoreUrl = 'https://api.trackingmore.com/v3/trackings/realtime';
+
+const correiosUrl = `https://proxyapp.correios.com.br/v1/sro-rastro`;
 
 app.use(cors({
   origin: '*'
@@ -14,13 +16,21 @@ app.use(cors({
 
 app.use(express.json());
 
-app.get('/api/correios/:packageId', async function (req, res) {
-  const correiosUrl = `https://proxyapp.correios.com.br/v1/sro-rastro/${req.params.packageId}`;
+app.get('/api/correios/:trackingId', async function (req, res) {
+  const url = `${correiosUrl}/${req.params.trackingId}`;
 
   try {
-    let response = await fetch(correiosUrl);
-    response = await response.json();
-    res.status(200).json(response);
+    let response = await fetch(url);
+    const jsonData = await response.json();
+
+    // "/public-resources/img/smile.png" -> "https://proxyapp.correios.com.br/v1/sro-rastro/public-resources/img/smile.png"
+    jsonData.objetos[0].eventos = jsonData.objetos[0].eventos.map((evento) => {
+      evento.urlIcone = `${correiosUrl}${evento.urlIcone}`;
+
+      return evento;
+    });
+
+    res.status(200).json(jsonData);
   } catch (err) {
     console.log(err);
     res.status(500).json({ msg: `Internal Server Error.` });
@@ -41,7 +51,7 @@ app.post(`/api/track`, async function (req, res) {
   };
 
   try {
-    let response = await fetch(apiUrl, options);
+    let response = await fetch(trackingmoreUrl, options);
     response = await response.json();
     res.status(200).json(response);
   } catch (err) {
