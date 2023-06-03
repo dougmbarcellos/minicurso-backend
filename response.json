@@ -1,0 +1,280 @@
+{
+  versao: '0.0.0',
+  quantidade: 1,
+  objetos: [{
+      "codObjeto": "QM687737359BR",
+      "tipoPostal": {
+          "sigla": "QM",
+          "descricao": "ETIQUETA LOGICA PAC",
+          "categoria": "ENCOMENDA PAC",
+          "tipo": "N"
+      },
+      "dtPrevista": "29\/03\/2023",
+      "modalidade": "F",
+      "eventos": [
+          {
+              "codigo": "BDE",
+              "tipo": "01",
+              "dtHrCriado": "2023-03-29 17:09:59.000000",
+              "descricao": "Objeto entregue ao destinat\u00e1rio",
+              "unidade": {
+                  "nome": "",
+                  "codSro": "",
+                  "codMcu": "",
+                  "tipo": "Unidade de Distribui\u00e7\u00e3o",
+                  "endereco": {
+                      "identificacao": null,
+                      "principal": null,
+                      "numero": null,
+                      "logradouro": null,
+                      "complemento": null,
+                      "bairro": null,
+                      "cidade": "APARECIDA DE GOIANIA",
+                      "uf": "GO",
+                      "codigoPostal": null,
+                      "siglaPais": null
+                  }
+              },
+              "unidadeDestino": null,
+              "comentario": "",
+              "icone": "https://rastreamento.correios.com.br/static/rastreamento-internet/imgs/smile.png",
+              "descricaoFrontEnd": "ENTREGUE",
+              "finalizador": "S",
+              "rota": "CONTEXTO",
+              "descricaoWeb": "ENTREGUE",
+              "detalhe": "",
+              "destinatario": null,
+              "cached": true
+          },
+          {
+              "codigo": "OEC",
+              "tipo": "01",
+              "dtHrCriado": "2023-03-29 09:31:05.000000",
+              "descricao": "Objeto saiu para entrega ao destinat\u00e1rio",
+              "unidade": {
+                  "nome": "",
+                  "codSro": "",
+                  "codMcu": "",
+                  "tipo": "Unidade de Distribui\u00e7\u00e3o",
+                  "endereco": {
+                      "identificacao": null,
+                      "principal": null,
+                      "numero": null,
+                      "logradouro": null,
+                      "complemento": null,
+                      "bairro": null,
+                      "cidade": "APARECIDA DE GOIANIA",
+                      "uf": "GO",
+                      "codigoPostal": null,
+                      "siglaPais": null
+                  }
+              },
+              "unidadeDestino": null,
+              "comentario": "",
+              "icone": "https://rastreamento.correios.com.br/static/rastreamento-internet/imgs/pre-atendimento-cor.png",
+              "descricaoFrontEnd": "SAIU PARA ENTREGA AO DESTINAT\u00c1RIO",
+              "finalizador": "N",
+              "rota": "NORMAL",
+              "descricaoWeb": "SAIU-ENTREGA-DESTINATARIO",
+              "detalhe": "",
+              "destinatario": null,
+              "cached": true
+          },
+          {
+              "codigo": "RO",
+              "tipo": "01",
+              "dtHrCriado": "2023-03-28 11:07:53.000000",
+              "descricao": "Objeto em tr\u00e2nsito - por favor aguarde",
+              "unidade": {
+                  "nome": "",
+                  "codSro": "",
+                  "codMcu": "",
+                  "tipo": "Unidade de Tratamento",
+                  "endereco": {
+                      "identificacao": null,
+                      "principal": null,
+                      "numero": null,
+                      "logradouro": null,
+                      "complemento": null,
+                      "bairro": null,
+                      "cidade": "APARECIDA DE GOIANIA",
+                      "uf": "GO",
+                      "codigoPostal": null,
+                      "siglaPais": null
+                  }
+              },
+              "unidadeDestino": {
+                  "nome": "",
+                  "codSro": "",
+                  "codMcu": "",
+                  "tipo": "Unidade de Distribui\u00e7\u00e3o",
+                  "endereco": {
+                      "identificacao": null,
+                      "principal": null,
+                      "numero": null,
+                      "logradouro": null,
+                      "complemento": null,
+                      "bairro": null,
+                      "cidade": "APARECIDA DE GOIANIA",
+                      "uf": "GO",
+                      "codigoPostal": null,
+                      "siglaPais": null
+                  }
+              },
+              "comentario": "",
+              "icone": "https://rastreamento.correios.com.br/static/rastreamento-internet/imgs/caminhao-cor.png",
+              "descricaoFrontEnd": "OBJETO ENCAMINHADO PARA",
+              "finalizador": "N",
+              "rota": "CONTEXTO",
+              "descricaoWeb": "TRANSITO",
+              "detalhe": "",
+              "destinatario": null,
+              "cached": true
+          },
+          {
+              "codigo": "DO",
+              "tipo": "01",
+              "dtHrCriado": "2023-03-21 15:40:32.000000",
+              "descricao": "Objeto em tr\u00e2nsito - por favor aguarde",
+              "unidade": {
+                  "nome": "",
+                  "codSro": "",
+                  "codMcu": "",
+                  "tipo": "Unidade de Tratamento",
+                  "endereco": {
+                      "identificacao": null,
+                      "principal": null,
+                      "numero": null,
+                      "logradouro": null,
+                      "complemento": null,
+                      "bairro": null,
+                      "cidade": "PORTO ALEGRE",
+                      "uf": "RS",
+                      "codigoPostal": null,
+                      "siglaPais": null
+                  }
+              },
+              "unidadeDestino": {
+                  "nome": "",
+                  "codSro": "",
+                  "codMcu": "",
+                  "tipo": "Unidade de Tratamento",
+                  "endereco": {
+                      "identificacao": null,
+                      "principal": null,
+                      "numero": null,
+                      "logradouro": null,
+                      "complemento": null,
+                      "bairro": null,
+                      "cidade": "APARECIDA DE GOIANIA",
+                      "uf": "GO",
+                      "codigoPostal": null,
+                      "siglaPais": null
+                  }
+              },
+              "comentario": "",
+              "icone": "https://rastreamento.correios.com.br/static/rastreamento-internet/imgs/caminhao-cor.png",
+              "descricaoFrontEnd": "ENCAMINHADO",
+              "finalizador": "N",
+              "rota": "CONTEXTO",
+              "descricaoWeb": "TRANSITO",
+              "detalhe": "",
+              "destinatario": null,
+              "cached": true
+          },
+          {
+              "codigo": "DO",
+              "tipo": "01",
+              "dtHrCriado": "2023-03-17 17:15:41.000000",
+              "descricao": "Objeto em tr\u00e2nsito - por favor aguarde",
+              "unidade": {
+                  "nome": "",
+                  "codSro": "",
+                  "codMcu": "",
+                  "tipo": "Ag\u00eancia dos Correios",
+                  "endereco": {
+                      "identificacao": null,
+                      "principal": null,
+                      "numero": null,
+                      "logradouro": null,
+                      "complemento": null,
+                      "bairro": null,
+                      "cidade": "SAO LEOPOLDO",
+                      "uf": "RS",
+                      "codigoPostal": null,
+                      "siglaPais": null
+                  }
+              },
+              "unidadeDestino": {
+                  "nome": "",
+                  "codSro": "",
+                  "codMcu": "",
+                  "tipo": "Unidade de Tratamento",
+                  "endereco": {
+                      "identificacao": null,
+                      "principal": null,
+                      "numero": null,
+                      "logradouro": null,
+                      "complemento": null,
+                      "bairro": null,
+                      "cidade": "PORTO ALEGRE",
+                      "uf": "RS",
+                      "codigoPostal": null,
+                      "siglaPais": null
+                  }
+              },
+              "comentario": "",
+              "icone": "https://rastreamento.correios.com.br/static/rastreamento-internet/imgs/caminhao-cor.png",
+              "descricaoFrontEnd": "ENCAMINHADO",
+              "finalizador": "N",
+              "rota": "CONTEXTO",
+              "descricaoWeb": "TRANSITO",
+              "detalhe": "",
+              "destinatario": null,
+              "cached": true
+          },
+          {
+              "codigo": "PO",
+              "tipo": "01",
+              "dtHrCriado": "2023-03-17 16:25:56.000000",
+              "descricao": "Objeto postado",
+              "unidade": {
+                  "nome": "",
+                  "codSro": "",
+                  "codMcu": "",
+                  "tipo": "Ag\u00eancia dos Correios",
+                  "endereco": {
+                      "identificacao": null,
+                      "principal": null,
+                      "numero": null,
+                      "logradouro": null,
+                      "complemento": null,
+                      "bairro": null,
+                      "cidade": "SAO LEOPOLDO",
+                      "uf": "RS",
+                      "codigoPostal": null,
+                      "siglaPais": null
+                  }
+              },
+              "unidadeDestino": null,
+              "comentario": "",
+              "icone": "https://rastreamento.correios.com.br/static/rastreamento-internet/imgs/agencia-cor.png",
+              "descricaoFrontEnd": "OBJETO POSTADO",
+              "finalizador": "N",
+              "rota": "NORMAL",
+              "descricaoWeb": "POSTAGEM",
+              "detalhe": "",
+              "destinatario": null,
+              "cached": true
+          }
+      ],
+      "situacao": "E",
+      "autoDeclaracao": false,
+      "encargoImportacao": false,
+      "percorridaCarteiro": false,
+      "bloqueioObjeto": false,
+      "arEletronico": false,
+      "arImagem": null,
+      "locker": false
+  }]
+}
