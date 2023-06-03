@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors')
 const app = express();
 const port = process.env.PORT || 3030;
-const staticResponse = require("./response.json");
+const staticResponse = require('./response.json');
 
 const fetch = (...args) =>
   import('node-fetch').then(({ default: fetch }) => fetch(...args));
